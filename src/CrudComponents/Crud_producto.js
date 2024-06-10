@@ -113,13 +113,13 @@ function Crud_Prducto() {
         try {
             console.log('Datos del producto a actualizar:', datosProducto);
 
-            // Obtener el ID de la mascota seleccionada
+            // Obtener el ID de la categoria seleccionada
             const idCategoria = categorias.find(categoria => categoria.name === datosProducto.category)?.id;
             
-            // Obtener el ID de la especialidad seleccionada
+            // Obtener el ID del proveedor seleccionado
             const idProveedor = proveedores.find(proveedor => proveedor.name === datosProducto.provider)?.id;
 
-            // Obtener el ID de la especialidad seleccionada
+            // Obtener el ID del estado seleccionado
             const idEstado = estados.find(estado => estado.name === datosProducto.state)?.id;
 
             const response = await ProductService.updateProduct(datosProducto.id, {
@@ -224,7 +224,7 @@ function Crud_Prducto() {
                         </Form.Group>
                         <Form.Group controlId="formBasicHour">
                             <Form.Label>Cantidad</Form.Label>
-                            <Form.Control type="text" value={datosFormularioEdicion.amount} onChange={(e) => setDatosFormularioEdicion({ ...datosFormularioEdicion, amount: e.target.value })} />
+                            <Form.Control type="int" value={datosFormularioEdicion.amount} onChange={(e) => setDatosFormularioEdicion({ ...datosFormularioEdicion, amount: e.target.value })} />
                         </Form.Group>
                         <Form.Group controlId="formBasicHour">
                             <Form.Label>Lote</Form.Label>

@@ -6,9 +6,6 @@ import agendamiento from '../assets/images/agendamiento.png'
 import historia from '../assets/images/historia.png'
 import inventario from '../assets/images/inventario.jpg'
 import { Link, NavLink } from 'react-router-dom';
-import '../assets/css/nosotros.css';
-import '../assets/css/consejos.css';
-import inventario from '../assets/images/inventario.jpg';
 import Footer from '../components/Footer';
 import Menu from '../components/Menu';
 

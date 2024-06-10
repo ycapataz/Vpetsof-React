@@ -12,7 +12,9 @@ import CrudRegistroClinico from './CrudComponents/CrudRegistroClinico';
 import CrudClientes from './CrudComponents/Crud_Clientes';
 import CrudProducto from './CrudComponents/Crud_producto';
 import CrudFormulaMedica from './CrudComponents/CrudFormulaMedica';
-import CrudProveedor from './CrudComponents/Crud_proveedor'
+import CrudProveedor from './CrudComponents/Crud_proveedor';
+import CrudMascota from './CrudComponents/Crud_mascota';
+import CrudEmpleado from './CrudComponents/Crud_empleado';
 
 function App() {
   return (
@@ -35,6 +37,8 @@ function App() {
         <Route path="/Proveedor" element={<CrudProveedor />} />
         <Route path="/Registro_clinico" element={<CrudRegistroClinico />} />
         <Route path="/Fomula_Medica" element={<CrudFormulaMedica />} />
+        <Route path="/Mascotas" element={<CrudMascota />} />
+        <Route path="/Empleados" element={<CrudEmpleado />} />
       </Routes>
     </div>
   </Router>

@@ -3,7 +3,7 @@ import axios from "axios";
 const Url_pet = 'http://localhost:8080/api/pet';
 
 class PetService {
-    getAllPet() {
+    getAllPets() {
         return axios.get(`${Url_pet}/all`);
     }
 
